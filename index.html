@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+
+<body>
+    <main class="card">
+        <div class="search">
+            <input type="search" class="city" placeholder="Insira o nome da cidade" spellcheck="false">
+            <button>
+                <span class="material-icons-outlined">
+                    search
+                </span>
+            </button>
+        </div>
+        <div class="error">
+            Nome de cidade inválido
+        </div>
+        <div class="weather">
+            <img src="imgs/rain.svg" alt="" class="weather-icon">
+            <h1 class="temp"> 22°C</h1>
+            <h2 class="city" id="cidade">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="imgs/humidity.png" alt="">
+                    <div>
+                        <div style="display: flex;">
+                            <p class="humidity">50</p>
+                            <p class="unit">%</p>
+                        </div>
+                        <p class="details-description">Umidade</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="imgs/wind.png" alt="">
+                    <div>
+                        <div style="display: flex;">
+                            <p class="wind">50</p>
+                            <p class="unit"> km/h</p>
+                        </div>
+                        <p class="details-description">Força do Vento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
